@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis Recetas</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h2>Hola <%= user.username %> 💖</h2>
+  <h3>Tus recetas:</h3>
+  <ul>
+    <% recetas.forEach(r => { %>
+      <li><b><%= r.titulo %></b><br>Ingredientes: <%= r.ingredientes %><br>Pasos: <%= r.pasos %></li>
+    <% }) %>
+  </ul>
+
+  <h3>Agregar nueva receta</h3>
+  <form method="POST" action="/recetas">
+    <input type="text" name="titulo" placeholder="Título" required>
+    <textarea name="ingredientes" placeholder="Ingredientes" required></textarea>
+    <textarea name="pasos" placeholder="Pasos" required></textarea>
+    <button type="submit">Guardar</button>
+  </form>
+</body>
+</html>

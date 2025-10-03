@@ -1,0 +1,32 @@
+body {
+  font-family: "Comic Sans MS", cursive;
+  background: pink;
+  text-align: center;
+}
+.box {
+  background: #fff0f5;
+  border-radius: 15px;
+  padding: 30px;
+  width: 300px;
+  margin: 100px auto;
+  box-shadow: 0px 0px 10px #ffb6c1;
+}
+input, textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 90%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+button {
+  background: #ff69b4;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover {
+  background: #ff1493;
+}
